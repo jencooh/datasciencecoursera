@@ -88,3 +88,7 @@ affyMis <- fetch(query); quantile(affyMis$misMatches)
    1    1    2    2    3
 affyMisSmall <- fetch(query, n=10); dbClearResult(query);
 [1] TRUE
+ dim(affyMisSmall)
+[1] 10 22
+> dbDisconnect(hg19)
+[1] TRUE
